@@ -21,40 +21,7 @@ The analysis was conducted using:
 
 ## DATA PREPARATION
 The first step involved creating a table within the coffee shop database to house the dataset. Once the table was established, the dataset was loaded into it to enable efficient querying and analysis.
-![Code to Create and load table](./C:/Users/HP/Pictures/Screenshots/createtable.png)
+![Code to Create and load table](./Images/createtable.png)
 
+![Code to Create and load table](./Images/Loadeddata.png)
 
- ```sql
-    CREATE TABLE transactions (
-        transaction_id INT, 
-        transaction_date TEXT,  
-        transaction_time TEXT, 
-        transaction_qty INT, 
-        store_id INT, 
-        store_location TEXT, 
-        product_id INT, 
-        unit_price DOUBLE, 
-        product_category TEXT, 
-        product_type TEXT, 
-        product_detail TEXT
-    );
-    ```
-```sql
-  LOAD DATA INFILE 'C:/Program Files/Documents/Coffee Shop Sales.csv'
-  INTO TABLE transactions
-  FIELDS TERMINATED BY ',' 
-  ENCLOSED BY '"'
-  LINES TERMINATED BY '\n'
-  IGNORE 1 ROWS (
-    transaction_id, 
-    transaction_date, 
-    transaction_time, 
-    transaction_qty, 
-    store_id, store_location, 
-    product_id, 
-    unit_price, 
-    product_category, 
-    product_type, 
-    product_detail
-  );
-  ```
