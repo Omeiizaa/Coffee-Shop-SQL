@@ -63,10 +63,10 @@ To further analyze this, we calculated the month-on-month change in sales as a p
 ![Change in Monthly Sales](./Images/Percentagechangeinsales.png)
 
 ## Orders by Month:
-What is the total number of orders recorded each month?
+What is the total number of orders recorded each month? <br>
 To determine the number of orders placed each month, we grouped the data by the month of the transaction date and counted the total number of unique orders.
 ![Change in Monthly Orders](./Images/Ordersbymonth.png)
-The result from the above correlates with the analysis for sales. There is generally an increase in orders every month except for February. There is no much difference in percentage change in orders compared to that of sales. Infact, for March it was almost identical percentage (29.7777 and 29.7695). 
+The result from the above correlates with the analysis for sales. There is generally an increase in orders every month except for February. There is no much difference in percentage change in orders compared to that of sales. 
 
 ## Quantity Sold by Month:
 What is the total number of quantity sold each month?
